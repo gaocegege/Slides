@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="jquery-2.1.1.min.js"></script>
+    <script src="jquery.ascensor.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <nav id="navigationMap">
+        <!-- And yes, I had fun with http://copypastecharacter.com/symbols  -->
+        <ul class="links-to-floor">
+            <li class="ascensorLink ascensorLink0 selected">
+                <span>♛</span>
+            </li>
+            <li class="ascensorLink ascensorLink1">
+                <span>✔</span>
+            </li>
+            <li class="ascensorLink ascensorLink2">
+                <span>✌</span>
+            </li>
+            <li class="ascensorLink ascensorLink3">
+                <span>&#9000;</span>
+            </li>
+            <li class="ascensorLink ascensorLink4">
+                <span>$$$</span>
+            </li>
+            <li class="ascensorLink ascensorLink5">
+                <span>:)</span>
+            </li>
+            <li class="ascensorLink ascensorLink6">
+                <span>☠</span>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="ascensor">
+        <!-- Home -->
+        <section style="position: absolute; overflow: auto; top: 0px; left: 0px; width: 100%; height: 100%; transform: translateY(100%) translateX(0%);">
+            <article class="container">
+                <h1>
+                    <img src="./Ascensor.js_files/ascensorLogo.png">
+                </h1>
+                <p>Ascensor is a jquery plugin which aims to train and adapt content according to an elevator system. It work with jquery &gt;= 1.7.</p>
+                <p>This plugin is entirely free to use, but you're always welcome to <a href="http://kirkas.ch/ascensor/#Donate">pay me a beer</a>
+                </p>
+                <a href="http://kirkas.ch/ascensor/#Donate">
+
+
+                </a><a class="button" href="https://raw.github.com/kirkas/Ascensor.js/master/dist/jquery.ascensor.js">Download Ascensor.js</a>
+                <a class="button grey" href="https://raw.github.com/kirkas/Ascensor.js/master/dist/jquery.ascensor.min.js">Get the minified version</a>
+                <p><a href="http://gaocegege.github.io/#Implementation">→ Implementation</a>
+                </p>
+                <iframe id="tmp_downloadhelper_iframe" style="display: none;"></iframe>
+            </article>
+        </section>
+
+        <!-- Implementation -->
+        <section style="position: absolute; overflow: auto; top: 0px; left: 0px; width: 100%; height: 100%; transform: translateY(100%) translateX(100%);">
+            <article class="container">
+                <h1>Basic implementation</h1>
+                <pre class="prettyprint"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"ascensor"</span><span class="tag">&gt;</span><span class="pln"><br>&nbsp; </span><span class="tag">&lt;div&gt;</span><span class="pln">Content 1</span><span class="tag">&lt;/div&gt;</span><span class="pln"><br>&nbsp; </span><span class="tag">&lt;div&gt;</span><span class="pln">Content 2</span><span class="tag">&lt;/div&gt;</span><span class="pln"><br>&nbsp; </span><span class="tag">&lt;div&gt;</span><span class="pln">Content 3</span><span class="tag">&lt;/div&gt;</span><span class="pln"><br></span><span class="tag">&lt;/div&gt;</span><span class="pln"><br></span><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"jquery['&gt;</span><span class="pun">=</span><span class="lit">1.7</span><span class="str">'].js"&gt;</span><span class="tag">&lt;/script&gt;</span><span class="pln"><br></span><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"jquery.ascensor.js"</span><span class="tag">&gt;&lt;/script&gt;</span><span class="pln"><br></span><span class="tag">&lt;script&gt;</span><span class="pln"><br>&nbsp; $</span><span class="pun">(</span><span class="str">'#ascensor'</span><span class="pun">).</span><span class="pln">ascensor</span><span class="pun">();</span><span class="pln"><br></span><span class="tag">&lt;/script&gt;</span></pre>
+                <p><a href="http://kirkas.ch/ascensor/#Options">→ Docs &amp; options</a>
+                </p>
+            </article>
+        </section>
+        <section style="position: absolute; overflow: auto; top: 0px; left: 0px; width: 100%; height: 100%; transform: translateY(200%) translateX(100%);">
+            <article class="container">
+                <h1>Doc &amp; options</h1>
+                <p>The doc is available on the github <a href="https://github.com/kirkas/Ascensor.js">Github repo</a>
+                </p>
+                <p>If you have any suggestions or bugs, please let me know at this <a href="mailto:contact@kirkas.ch" title="[GMCP] Compose a new mail to e-mail" onclick="window.open(&#39;https://mail.google.com/mail/?view=cm&amp;fs=1&amp;tf=1&amp;to=contact@kirkas.ch&#39;,&#39;Compose new message&#39;,&#39;width=640,height=480&#39;);return false" rel="noreferrer">e-mail</a>
+                </p>
+                <p><a href="http://kirkas.ch/ascensor/#Examples">→ Examples &amp; uses</a>
+                </p>
+            </article>
+        </section>
+
+        <!-- Examples -->
+        <section style="position: absolute; overflow: auto; top: 0px; left: 0px; width: 100%; height: 100%; transform: translateY(200%) translateX(200%);">
+            <article class="container">
+                <h1>Examples and use</h1>
+                <p>Website using ascensor :</p>
+                <a href="http://www.waterevive.com/" title="new world whisky">waterevive</a>
+                <br>
+                <a href="http://shanaemairs.com/" title="new world whisky">shanaemairs</a>
+                <br>
+                <a href="http://reverseburo.com/" title="new world whisky">reverseburo</a>
+                <br>
+                <a href="http://www.robclowes.com/" title="new world whisky">robclowes</a>
+                <br>
+                <a href="http://iadindustry.se/" title="new world whisky">iadindustry</a>
+                <br>
+                <a href="http://newworldwhisky.com.au/" title="new world whisky">newworldwhisky</a>
+                <br>
+                <a href="http://www.lucasexbrayat.com/#/accueil">lucasexbrayat</a>
+                <br>
+                <a href="http://scan.dk/dk/hjem;jsessionid=486F06AA85436F47F129928B520BBC93">scan.dk</a>
+                <a href="http://alpineconstruction.ca/">alpineconstruction.dk</a>
+                <p><a href="http://kirkas.ch/ascensor/#Donate">→ $$$</a>
+                </p>
+            </article>
+        </section>
+
+        <section style="position: absolute; overflow: auto; top: 0px; left: 0px; width: 100%; height: 100%; transform: translateY(200%) translateX(300%);">
+            <article class="container">
+                <h1>Donation</h1>
+                <p>Again, This plugin is entirely free, but if you feel generous, here's and ugly button:</p>
+                <form action="https://www.paypal.com/cgi-bin/webscr" class="paypalButton" method="post">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="SHS7YMYEEBPC6">
+                    <input type="image" src="./Ascensor.js_files/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                    <img alt="" border="0" src="./Ascensor.js_files/pixel.gif" width="1" height="1">
+                </form>
+            </article>
+        </section>
+
+
+        <!-- Me -->
+        <section style="position: absolute; overflow: auto; top: 0px; left: 0px; width: 100%; height: 100%; transform: translateY(100%) translateX(300%);">
+            <article class="container">
+                <h1>Me</h1>
+                <p>I'm Léo Galley, a young Swiss multimedia designer. I am passionate about communication and the manifestations of it in every form, with a particular love for web design and UI design.</p>
+                <p>I'm currently working as a designer/front-end developer at <a href="http://www.bluefields.com/">Bluefields</a>.</p>
+                <p>You can contact me <a href="mailto:contact@kirkas.ch" title="[GMCP] Compose a new mail to here" onclick="window.open(&#39;https://mail.google.com/mail/?view=cm&amp;fs=1&amp;tf=1&amp;to=contact@kirkas.ch&#39;,&#39;Compose new message&#39;,&#39;width=640,height=480&#39;);return false" rel="noreferrer">here</a>, and download my resume <a href="http://kirkas.ch/files/CV.pdf">here.</a>
+                </p>
+
+            </article>
+        </section>
+
+        <!-- License -->
+        <section style="position: absolute; overflow: auto; top: 0px; left: 0px; width: 100%; height: 100%; transform: translateY(0%) translateX(300%);">
+            <article class="container">
+                <h1>License (MIT)</h1>
+                <p>
+                    Copyright (c) 2013 léo galley Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+            </article>
+        </section>
+
+    </div>
+
+    <script>
+    $().ready(function() {
+        var ascensor = $('#ascensor').ascensor({
+            childType: "section",
+            // name of the floor,showed as '#XXX'
+            ascensorFloorName: ["Home", "Implementation", "Options", "Examples", "Donate", "Me", "License"],
+            // slide time
+            time: 250,
+            WindowsFocus: true,
+            WindowsOn: 0,
+            //slide direction
+            //[x, y] means the floor is at location[x, y]
+            direction: [
+                //0 0 0 7
+                //1 2 0 6
+                //0 3 4 5
+                [1, 0], //1
+                [1, 1], //2
+                [2, 1], //3
+                [2, 2], //4
+                [2, 3], //5
+                [1, 3], //6
+                [0, 3] //7
+            ],
+            NavigationDirection: 'xy',
+            Direction: 'y',
+            Navig: true,
+            Link: false,
+            ReturnURL: true,
+            PrevNext: true,
+            CSSstyles: true,
+
+            KeyArrow: true,
+            keySwitch: true,
+            ReturnCode: false,
+
+            ChocolateAscensor: true,
+            AscensorMap: '4|2',
+            ContentCoord: '1|1 & 1|2 & 1|3 & 1|4 & 2|4 & 2|3 & 2|2 & 2|1'
+        });
+        ascensor.on("scrollStart", function(e, floor) {
+            console.log('scrollStart from ' + floor.from) // Return the origin floor
+            console.log('scrollStart to ' + floor.to) // Return the targeted floor
+        });
+
+        ascensor.on("scrollEnd", function(e, floor) {
+            console.log('scrollEnd from' + floor.from) // Return the origin floor
+            console.log('scrollEnd to' + floor.to) // Return the targeted floor
+        });
+
+        $(".links-to-floor li:eq(" + ascensor.data("current-floor") + ")").addClass("selected"), $(".links-to-floor li").click(function() {
+            ascensor.trigger("scrollToStage", $(this).index())
+        }), ascensor.on("scrollStart", function(e, o) {
+            $(".links-to-floor li").removeClass("selected"), $(".links-to-floor li:eq(" + o.to + ")").addClass("selected")
+        }), $(".prev").click(function() {
+            ascensor.trigger("prev")
+        }), $(".next").click(function() {
+            ascensor.trigger("next")
+        }), $(".up").click(function() {
+            ascensor.trigger("scrollToDirection", "up")
+        }), $(".down").click(function() {
+            ascensor.trigger("scrollToDirection", "down")
+        }), $(".left").click(function() {
+            ascensor.trigger("scrollToDirection", "left")
+        }), $(".right").click(function() {
+            ascensor.trigger("scrollToDirection", "right")
+        });
+    });
+    </script>
+
+</body>
+
+</html>
