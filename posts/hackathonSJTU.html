@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="my slides">
+		<meta name="author" content="gaoce">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="../Reveal/css/reveal.min.css">
+		<link rel="stylesheet" href="../Reveal/css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="../Reveal/lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Hackathon Slides</h1>
+					<h3>Better code, better life</h3>
+					<p>
+						<small>Coder: 周旭晨，高策，李旭</small>
+					</p>
+				</section>
+
+				<!-- //bug -->
+				<section>
+					<h2>Outline</h2>
+					<ul>
+						<li>需求分析</li>
+						<li>功能说明</li>
+						<li>效果展示</li>
+						<li>技术概览</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>核心价值观</h2>
+					<p>
+						大家一起做事情，爽过一个人
+					</p>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>需求</h2>
+					</section>
+					<section>
+						<h2>没有我们的网站之前</h2>
+						<img src="./image/1.png">
+						<p>找不到人一起玩耍，一起学习</p>
+					</section>
+					<section>
+						<h2>自从今天开始</h2>
+						<img src="./image/2.png">
+						<p>想找人一起线上对战，没问题，想找人一起线下对撸代码，没问题！</p>
+					</section>
+					<section>
+						<h2>我们的需求</h2>
+						<p>寻找臭味相投的朋友</p>
+					</section>
+				</section>
+
+				<section>
+					<h2>功能说明</h2>
+					<ul>
+						<li>发布个人活动</li>
+						<li>加入他人活动</li>
+						<li>登录注册</li>
+					</ul>
+				</section>
+
+				<section>
+					<section>
+						<h2>效果展示</h2>
+					</section>
+
+					<section>
+						<h2>实现情况</h2>
+						<p>实现基本功能</p>
+						<p>服务器Django，前端AngularJs</p>
+					</section>
+
+					<section>
+						<a href="#">同基网</a>
+					</section>
+				</section>
+
+				<section>
+					<h2>技术</h2>
+					<p>
+						Single Page Application
+					</p>
+				</section>
+
+				<section>
+					<h1>THE END</h1>
+					<h3>Thank you!</h3>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="../Reveal/lib/js/head.min.js"></script>
+		<script src="../Reveal/js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: '../Reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../Reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../Reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../Reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../Reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: '../Reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
